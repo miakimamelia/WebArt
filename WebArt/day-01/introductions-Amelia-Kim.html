@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+           
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-color: black;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        p {
+            color:aliceblue;
+            font-family:'Courier New', Courier, monospace;
+            font-size: 20px;
+            text-align: center;
+        }
+
+    #title {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 100px;
+    color:aliceblue;
+    border: 1.5px solid whitesmoke;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); 
+    width: 100%; 
+    margin-right: 100px;
+    max-width: 900px; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+#title a {
+    font-size: 20px;
+    font-family:'Courier New';
+    padding-left: 20px; /* Add left padding */
+    padding-right: 20px; /* Add right padding */
+    border: 1.5px solid whitesmoke;
+    border-radius: 10px;
+    
+}
+
+        .container {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto; /* Add margin to the top and bottom, center horizontally */
+    max-width: 900px; /* Limit the maximum width */
+    padding: 0 15px; /* Add padding to the left and right */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.box {
+
+    width: 100%; /* Adjust the width as needed */
+    max-width: 900px; /* Limit the maximum width */
+    height: auto; /* Remove fixed height */
+    border: 1.5px solid whitesmoke;
+    border-radius: 10px;
+    margin: 15px auto; /* Center horizontally with 'auto' margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    color:aliceblue;
+    backdrop-filter: blur(10px); 
+    
+}
+
+.introduction {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px auto;
+    
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: aliceblue;
+}
+
+img {
+    border-radius: 30px;
+    padding: 10px;
+    width: 100%;
+    max-width: 900px; 
+
+}
+
+li {
+
+    padding: 10px;
+    text-align: center;
+
+}
+@media screen and (max-width: 100%) {
+   
+    }      
+    </style>
+</head>
+<body>
+
+    <div class="introduction"
+         id="title">Introduction<a>Web Art, Professional Practices, Fall 2023</a>
+        </div>
+    <div class="container">
+        
+        </div>
+        <div class="box">
+            <img src="me1.jpg" alt="me" style="width: 500px">   
+            <h2>What’s your preferred name (what should we call you)?</h2>
+            <p>Hi, I'm Amelia</p>
+        </div>
+        
+        <!-- Add separate boxes for each list item -->
+        <div class="box">
+            <ol>
+                <h2>What’s your favorite color?</h2>
+            </ol>
+            <p>Vantablack</p>
+        </div>
+    
+        <div class="box">
+            <ol>
+                <h2>What’s an artwork you like? (If it’s a time-based work, we won’t have time to watch it right now, but feel free to add it anyway!)</h2>
+            </ol>
+            <p>
+                <img src="art.jpg" alt="me" style="width: 500px"><br>
+                <a href="https://false-utopia.com/" target="_blank">false-utopia.com</a> is a growing web-based artwork that is an interactive story game in the form of a web page. I like to think of them as apocalyptic or doomsday-themed collages. I love all the hidden links that direct you to external articles, context, or definitions of terms. The artist is Sara Bezovšek.
+            </p>
+        </div>
+    
+        <div class="box">
+            <ol>
+                <h2>Something you’re super excited about (anything!)</h2>
+            </ol>
+            <p>Autumn</p>
+        </div>
+    
+        <div class="box">
+            <ol>
+                <h2>Something you’re super **NOT** excited about (anything!)</h2>
+            </ol>
+            <p>Having to go grocery shopping this week -_-</p>
+        </div>
+    
+        <div class="box">
+            <ol>
+                <h2>Something you recommend (anything! A book, an artist, a movie, show, video game, ice cream flavor, life philosophy, a keyboard (or a keyboard shortcut), a life hack, literally anything)</h2>
+            </ol>
+
+            <p>
+                <img src="love.jpg" alt="me" style="width: 300px"><br>
+                Love, Death, Robots. Favorite episode is "Bad Traveling" and "Jibaro!"</p>
+        </div>
+    </div>
+    
+   
+</body>
+</html>
