@@ -1,9 +1,19 @@
 
 
-h1 {
-    color: red;
+
+body {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 50px; 
+    font-family: 'Foldit', cursive;
+    line-height: 1.7;
+    background-color: cornsilk;
 }
 
+
+h2 {
+    margin-top: 72px;
+}
 img {
-    max-width: 100%
+    max-width: 100%; 
 }
