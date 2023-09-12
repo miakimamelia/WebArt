@@ -1,0 +1,29 @@
+
+
+
+body {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 50px; 
+    line-height: 1.7;
+    background-color: black;
+    
+}
+
+h1 {
+    color:whitesmoke;
+}
+
+h2 {
+    margin-top: 72px;
+    color: whitesmoke;
+}
+
+p {
+    color: whitesmoke;
+}
+
+img {
+    max-width: 100%; 
+    padding: 20px;
+}
