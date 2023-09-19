@@ -1,0 +1,45 @@
+body {
+    margin:0;
+}
+
+.clouds {
+    top:0;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100vh; /* vh = viewport height */
+    object-fit: cover ; /* really important */
+    object-position: top left;
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw; /* vw = viewport width (responsive)*/
+    /* mix-blend-mode:color-dodge; */
+    color:lemonchiffon;
+    text-shadow: 4px 4px rgb(74, 116, 164), 8px 8px hotpink, 12px 12px yellow;
+} 
+
+.frog {
+    width: 400px;
+    height: 800px;
+    object-fit: cover;
+    object-position: -400px;
+}
+
+.corner-message {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(animated_fish.gif);
+    background-repeat:inherit;
+    color: cyan;
+    margin: 1rem;
+    padding: 2em;
+    font-size: 2rem;
+    box-shadow: -20px 20px 10px yellow;
+}
