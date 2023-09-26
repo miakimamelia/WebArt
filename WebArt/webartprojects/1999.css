@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bgimg {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100vh; /* vh = viewport height */
+    object-fit: cover; /* really important */
+    object-position: top left;
+}
+
+.website {
+    display: grid;
+    grid-template-areas: 
+        "topbarleft topbarcenter topbarright"
+        "adsleft contentcenter sidebarright" 
+        "footerleft footercenter footerright";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 7fr 1fr;
+    gap: 1rem;
+    grid-auto-rows: minmax(50px, auto);
+    min-height: 100vh;
+    padding: 5%;
+}
+
+.topbarleft {
+    grid-area: topbarleft;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.topbarcenter {
+    grid-area: topbarcenter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+}
+
+
+.topbarright {
+    grid-area: topbarright;
+}
+
+.adsleft {
+    grid-area: adsleft;
+    background-color: grey;
+    padding: 10px;
+}
+
+.contentcenter {
+    grid-area: contentcenter;
+    padding: 10px;
+}
+
+.sidebarright {
+    grid-area: sidebarright;
+    background-color: grey;
+    padding: 10px;
+}
+
+.footerleft {
+    grid-area: footerleft;
+    background-color: grey;
+    padding: 10px;
+}
+
+.footercenter {
+    grid-area: footercenter;
+    background-color: grey;
+    padding: 10px;
+}
+
+.footerright {
+    grid-area: footerright;
+    background-color: grey;
+    padding: 10px;
+}

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "webartprojects",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "webartprojects"
+	}
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+         html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bgimg {
+            top: 0;
+            left: 0;
+            z-index: -1;
+            position: fixed;
+            width: 100%;
+            height: 100vh; /* vh = viewport height */
+            object-fit: cover; /* really important */
+            object-position: top left;
+        }
+
+        .website {
+            display: grid;
+            grid-template-areas: 
+                "topbarleft topbarcenter topbarright"
+                "adsleft contentcenter sidebarright" 
+                "footerleft footercenter footerright";
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 2fr 7fr 1fr;
+            gap: 1rem;
+            grid-auto-rows: minmax(50px, auto);
+            min-height: 100vh;
+            padding: 5%;
+        }
+
+       
+        .topbarleft {
+            grid-area: topbarleft;
+            background-color: #3498db;
+            padding: 10px;
+        }
+
+        .topbarcenter {
+            grid-area: topbarcenter;
+            grid-area: topbarcenter;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        .logo {
+            max-width: 100%;
+            width: 500px;
+            height: auto;
+      
+        }
+
+        .topbarright {
+            grid-area: topbarright;
+            background-color: #2ecc71;
+            padding: 10px;
+         
+        }
+
+        .adsleft {
+            grid-area: adsleft;
+            background-color: #f39c12;
+            padding: 10px;
+           
+        }
+
+        .contentcenter {
+            grid-area: contentcenter;
+            background-color: #9b59b6;
+            padding: 10px;
+            
+        }
+
+        .sidebarright {
+            grid-area: sidebarright;
+            background-color: #34495e;
+            padding: 10px;
+            
+        }
+
+        .footerleft {
+            grid-area: footerleft;
+            background-color: #e74c3c;
+            padding: 10px;
+            
+        }
+
+        .footercenter {
+            grid-area: footercenter;
+            background-color: #2ecc71;
+            padding: 10px;
+           
+        }
+
+        .footerright {
+            grid-area: footerright;
+            background-color: #3498db;
+            padding: 10px;
+         
+        }
+    </style>
+</head>
+<body>
+
+<div>
+<img class="bgimg" src="backgroundimg.jpg">
+
+</div> 
+    <div class="website">
+        <div class="topbarleft">
+            <!-- Content for topbarleft goes here -->
+            <p>Top Bar Left Content</p>
+        </div>
+        <div class="topbarcenter">
+            <img src="logo.png" alt="Logo Image" class="logo">
+        </div>
+        <div class="topbarright">
+            <!-- Content for topbarright goes here -->
+            <p>Top Bar Right Content</p>
+        </div>
+        <div class="adsleft">
+            <!-- Content for adsleft goes here -->
+            <p>Ads Left Content</p>
+        </div>
+        <div class="contentcenter">
+            <!-- Content for contentcenter goes here -->
+            <p>Content Center Content</p>
+        </div>
+        <div class="sidebarright">
+            <!-- Content for sidebarright goes here -->
+            <p>Sidebar Right Content</p>
+        </div>
+        <div class="footerleft">
+            <!-- Content for footerleft goes here -->
+            <p>Footer Left Content</p>
+        </div>
+        <div class="footercenter">
+            <!-- Content for footercenter goes here -->
+            <p>Footer Center Content</p>
+        </div>
+        <div class="footerright">
+            <!-- Content for footerright goes here -->
+            <p>Footer Right Content</p>
+        </div>
+    </div>
+</body>
+</html>
