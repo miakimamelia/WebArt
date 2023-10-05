@@ -6,3 +6,22 @@ html, body {
 canvas {
   display: block;
 }
+
+.track-title {
+  font-family: 'Radar-Yz7O', sans-serif; /* Use your custom font here */
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Your desired text color */
+}
+
+.track-artist {
+  font-family: 'Radar-Yz7O', sans-serif; /* Use your custom font here */
+  font-size: 14px;
+  color: #666; /* Your desired text color */
+}
+
+.track-year {
+  font-family: 'Radar-Yz7O', sans-serif; /* Use your custom font here */
+  font-size: 12px;
+  color: #999; /* Your desired text color */
+}

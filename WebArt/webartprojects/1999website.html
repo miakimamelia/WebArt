@@ -13,39 +13,136 @@
     
 </head>
 <body>
+    <div><img class="scan" src="scan.png">
  <div>
 <img class="bgimg" src="backgroundimg.jpg">
 </div> 
-    <div class="website">
-        <div class="topbarleft">
-           
+<div class="website">
+<div class="newrow">
 
-            <img class="lightning" src="lightning.gif" alt="Lightning">
+<div class="name text-glow">
+    <img class="crt" src="crt1.gif">
+   <!-- <h2>welcome to</h2><h1>VIOLET HOUR</h1> -->
+   <img class="logo" src="logo.png">
+    <span class="clock" id="clock">00:00:00</span>  <!-- This is where the time will be displayed -->
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+    
+            document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds}`;
+        }
+    
+        setInterval(updateClock, 1000);  // This will update the clock every second
+        updateClock();  // Call once at the beginning to set the initial time
+    </script>
+    
           </div>
-        <div class="topbarcenter">
-            <img src="logo.png" alt="Logo Image" class="logo">
         </div>
+       
 
-        
-        <div class="topbarright">
-            <!-- Content for topbarright goes here -->
-            <img class="lightning2" src="lightning.gif">
-        </div>
-        <div class="adsleft">
-            <p class="custom-font">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste atque culpa molestiae veniam harum excepturi reiciendis quae ab fugiat!
-            </p>
-         
-            <p class="custom-font">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste atque culpa molestiae veniam harum excepturi reiciendis quae ab fugiat!
-            </p>
-         
-            <p class="custom-font">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste atque culpa molestiae veniam harum excepturi reiciendis quae ab fugiat!
-            </p>
 
-            <!-- Content for adsleft goes here -->
+        <div class="sidebarleft">
 
+            <div class="container">
+                <div class="me">
+
+                </div>
+                
+              </div>
+              
+              <table class="table" border="5">
+                <tr>
+                    <td>Name</td>
+                    <td>Amelia</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Born</td>
+                    <td>05-06-2003</td>
+                </tr>
+                <tr>
+                    <td>☼</td>
+                    <td>Taurus</td>
+                </tr>
+                <tr>
+                    <td>Pronouns</td>
+                    <td>She/Her</td>
+                </tr>
+                <tr>
+                    <td>Located</td>
+                    <td>Chicago, IL</td>
+                </tr>
+
+                <tr>
+                    <td>Hometown</td>
+                    <td>Missoula, MT
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>MBTI</td>
+                    <td>INFJ</td>
+                </tr>
+            </table>
+            
+            <table class="table" border="5">
+                <tr>
+      
+                    <td><a href="https://20032003.neocities.org/" style="color: #d6d6cd;">sister-site</a></td>
+                </tr>
+                
+            </table>
+
+            <div class="custom-box2">
+    
+                <div class="musicbox">
+                 <div class="parent-container">
+                     <img src="cdcase.png" class="cdcase">
+                     <img src="cd.png" class="cd" id="spinning-object">
+                     <img src="slowdive.jpeg" class="cd-image">
+                 <div class="music-image">
+                     <!-- <div class="cd-info">
+                     </div> -->
+                  
+                 </div>
+                 </div>
+             </div>
+             <div class="inlinebutton">
+                <button id="playpauseButton" class="playpause button glass" type="button">p l a y / p a u s e</button>
+                          <!-- <button id="previousButton" class="previous button glass" type="button">p r e v i o u s</button>
+                          <button id="nextButton" class="next button glass" type="button">n e x t</button> -->
+                                </div>
+                                <table class="table" border="5">
+                                    <tr>
+                                        <td>Artist</td>
+                                        <td>Slowdive</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Song</td>
+                                        <td>When the Sun Hits</td>
+                                    </tr>
+                                    <tr>
+                                        <td>year</td>
+                                        <td>1993</td>
+                                    </tr>
+                                </table>
+                        
+                        </div>
+
+                     <audio id="audio1" src="Risingson (Remastered 2019).mp3"></audio>
+                     <audio id="audio2" src="Hole - Celebrity Skin.mp3"></audio>
+                     <audio id="audio3" src="Sonic Youth - Kool Thing.mp3"></audio>
+                     <audio id="audio4" src="Slowdive - When the Sun Hits (Audio).mp3"></audio>
+                     <audio id="audio5" src="Sometimes.mp3"></audio>
+                     <audio id="audio6" src="Deftones - My Own Summer (Official Music Video) [HD Remaster].mp3"></audio>
+                     <audio id="audio7" src="Foo Fighters - Everlong.mp3"></audio>
+                     <script src="1999.js"></script>
         </div>
 
         <div class="contentcenter">
@@ -54,81 +151,34 @@
              
                 <div class="custom-box">
                    
-            <h1 class="title">Congratulations! you've reached a cool place on the Internet</h1>
-                    <p class="IDtext"><img class="online" src="online.PNG">Hi, I'm Amelia. I am an artist trying to make sense of the intersection between art and the internet.<br><br>
-                        
-                  the year is somehow 1999, but my existence began in 2003.<br><br>
-                   
-                    This page is a place for me to cultivate my love and appreciation for the Web, practice coding, and share my artwork.<br><br>
-
-                </div>
+            <h3 class="title">Welcome!<h3>
+            <div class="clocky">
+                <script type="text/javascript">
+                    new imageclock.display()
+                </script><span id="clockspan0"> 
+            </div>
+         <div class="idbox">
+            <div class="idtext">
+                <!-- <img src="online.PNG" class="online"> -->
                 
-                <div class="custom-box">
-                   <div>
-               
-                    <div class="inlinebutton">
-                        <button id="playpauseButton" class="playpause button glass" type="button">p l a y / p a u s e</button>
+                <p>
+                Hi, you've reached my WebHome. I am an Image-maker interested in:
+                Objects & images of Memory, Niche Internet Cultures
+               Archiving, Repetition, Skeumorphic Design, Decentralizing the Internet, Creating visual systems with personal data, and the relationships between the Digital and the Physical world. 
+                </p>
+            </div>
          
-        
-                                  <button id="previousButton" class="previous button glass" type="button">p r e v i o u s</button>
-        
-        
-                                  <button id="nextButton" class="next button glass" type="button">n e x t</button>
-        
-                                
-                                        </div>
-                   <div class="musicbox">
+            
 
 
+            
 
-
-
-                    
-                    <div class="cd-container">
-                      
-                        <img src="cdcase.png" class="cdcase">
-                        <div class="cd-wrapper">
-                        <img src="cd.png" class="cd" id="spinning-object">
-                    </div>
-
-
-                    <div class="music-image">
-                        <!-- <img src="Massive_Attack.png" class="cd-image cover1">
-                      <img src="hole.png" class="cd-image cover2"> -->
-                        <!-- <img src="sonicyouth.png" class="cd-image copver3">
-                        
-                        <img src="mbv.jpeg" class="cd-image cover5">
-                        <img src="deftones_atf.jpg" class="cd-image cover6">
-                        <img src="foo.jpeg" class="cd-image cover7"> -->
-
-                        <div class="cd-info">
-                            <img src="slowdive.jpeg" class="cd-image cover4">
-                            <p class="musicinfo">Artist: Slowdive<br>
-                                Title: When the Sun Hits<br>
-                                Year: 1994
-                         </p>
-                        </div>
-                     
-                    </div>
-                    </div>
-                  
-                    
                 </div>
-                
             </div>
 
-          
-                        </div>
-
-                        <audio id="audio1" src="Risingson (Remastered 2019).mp3"></audio>
-                        <audio id="audio2" src="Hole - Celebrity Skin.mp3"></audio>
-                        <audio id="audio3" src="Sonic Youth - Kool Thing.mp3"></audio>
-                        <audio id="audio4" src="Slowdive - When the Sun Hits (Audio).mp3"></audio>
-                        <audio id="audio5" src="Sometimes.mp3"></audio>
-                        <audio id="audio6" src="Deftones - My Own Summer (Official Music Video) [HD Remaster].mp3"></audio>
-                        <audio id="audio7" src="Foo Fighters - Everlong.mp3"></audio>
+              
                 
-                        <script src="1999.js"></script>
+           
 
                 <div class="image-container">
             
@@ -164,7 +214,7 @@
                     </a>
                         <p class="description">
                             <br>
-                            Title: Electronic store<br><br>
+                            Title: Midnight at the Electronic Store<br><br>
                             
                         Medium: Autodesk Maya, 3D<br><br>
                         year: <span class="strikeout">2023</span> 1999<br><br>
@@ -176,43 +226,47 @@
                         <img class="art3" src="CENTIPEDE-Recovered.PNG">
                     </a>
                     <p class="description"><br>
-                        i wonder how many pixels make one ink dot.
+                        Metamorphosis
                         <br><br>
                         Medium: Ink Pen on paper<br><br>
                         year: <span class="strikeout">2021</span> 1999<br><br></p>
                 </div>
+                <div class="custom-box">
+                   
+                    <h3 class="title">Draw Something!<h3>
+                        <iframe class="p5" src="//editor.p5js.org/AmeliaKim/full/NqgvP9BAw"></iframe>
+                        </div>
+
             </div>
         </div>
         
-        <div class="sidebarright">
-            <!-- Content for sidebarright goes here -->
+        <!-- <div class="sidebarright">
          <img class="g" src="g.jpg">
                 <h2 class="custom-font">This is a work in progress!!!</h2><p class="custom-font">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, repellendus est. Iure fuga ipsam magni incidunt reiciendis. Possimus officia placeat vero, facilis magnam sed sunt deserunt neque repellat corrupti consectetur libero dolore molestiae esse eaque rem! Animi similique facilis corrupti quasi iure cum nemo libero provident magni nisi, eaque fuga.
             </p>
-        </div>
+        </div> -->
 
         <div class="footerleft">
             <!-- Content for footerleft goes here -->
             <p class="custom-font">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste atque culpa molestiae veniam harum excepturi reiciendis quae ab fugiat!
+            Lorem 
             </p>
         </div>
         <div class="footercenter">
             <!-- Content for footercenter goes here -->
       
-            <p class="custom-font">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste atque culpa molestiae veniam harum excepturi reiciendis quae ab fugiat!
-            </p>
         </div>
         <div class="footerright">
             <!-- Content for footerright goes here -->
-
             <p class="custom-font">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iste atque culpa molestiae veniam harum excepturi reiciendis quae ab fugiat!
-            </p>
+                Ipsum 
+                </p>
+
+           
         </div>
     </div>
+</div>
 </body>
 </html>
 
