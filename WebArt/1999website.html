@@ -15,6 +15,77 @@
     
 </head>
 <body>
+   <script>
+
+      let col1, col2, col3;
+
+let points = [];
+
+let timeStep = 0.01; // time step of simulation, delta of time
+
+const p = 18; // rho
+const s = 10; // σ  sigma
+const b = 8 / 3; // β beta
+
+let y = 0.01;
+let x = 0.1;
+let z = 0.0;
+
+let numPoints = 100;
+
+let bgR= 255;
+let bgG = 210;
+let bgB = 63;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  noStroke();
+  col1 = color(" #0017FF");
+  col2 = color(" #FF0446");
+  col3 = color("#ECEFE7");
+
+  for (let i = 0; i < numPoints; i++) {
+    let p = new Point(random(8,3), random(-500,-20), -80);
+
+    points.push(p);
+
+  }
+}
+
+function draw() {
+   background(bgR,bgG,bgB);
+
+  // need to move this out of Object so that it's only updated once per frame
+  let dt = timeStep;
+  let dx = s * (y - x) * dt;
+  let dy = (x * (p - z) - y) * dt;
+  let dz = (x * y - b * z) * dt;
+
+  x += dx;
+  y = y += dy;
+  z += dz;
+
+  bgR +=dx;
+  bgR = constrain(bgR,200,255)
+  
+   bgG +=dy;
+  bgG = constrain(bgG,180,230)
+    bgB +=dz;
+  bgB = constrain(bgB,25,80)
+  
+  
+  for (let po of points) {
+    po.move();
+    po.chaos();
+    po.check();
+    po.store();
+    po.show();
+  }
+
+
+}
+   </script>
+   
    
     <div><img class="scan" src="scan.png">
  <div>
