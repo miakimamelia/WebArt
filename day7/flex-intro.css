@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    gap: 1rem;
+}
+
+p {
+    background-color: lightgreen;
+    padding: .5rem;
+}
