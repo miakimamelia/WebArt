@@ -1,0 +1,42 @@
+
+.flex-container-row {
+
+    display:flex;
+    flex-direction: row; /* default direction */
+    background-color: rgb(26, 24, 24);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px; 
+    /* use gap to make space evenly, not adding margin on either side of the element */
+    padding: 20px;
+    height: 500px;
+}
+
+.flex-container-column {
+    height: 600px;
+    background-color: violet;
+    margin-bottom: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+
+
+.flex-item {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+
+    background-color: rgba(253, 5, 5, 0.834);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
